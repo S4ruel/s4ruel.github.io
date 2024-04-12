@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+  float numero;
+
+  printf("digite um numero real: ");
+  scanf("%f", &numero);
+
+  printf("O valor absoluto de %.2f é: %.2f\n", numero, fabs(numero));
+
+  
+  
+  return 0;
+
+}
