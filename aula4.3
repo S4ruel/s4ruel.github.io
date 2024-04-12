@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    float temperatura;
+    char tipo;
+
+    printf("informe o tipo de temperatura (C para Celsius ou F para \nFahrenheit): ");
+    scanf("%c", &tipo);
+  printf("Digite a temperatura: ");
+  scanf("%f", &temperatura);
+
+    
+    if (tipo == 'c' || tipo == 'C') {
+        float fahrenheit = (temperatura * 9 / 5) + 32;
+        printf("%.2f Celsius equivale a %.2f Fahrenheit\n", temperatura, fahrenheit);
+    } else if (tipo == 'f' || tipo == 'F') {
+        float celsius = (temperatura - 32) * 5 / 9;
+        printf("%.2f Fahrenheit equivale a %.2f Celsius\n", temperatura, celsius);
+    }
+  
+
+    return 0;
+}
